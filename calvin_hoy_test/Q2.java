@@ -1,14 +1,18 @@
 import java.util.*;
 
-public class Q2{     
+public class Q2{
+	//conversion method, converts all strings to floats
     public static float strToFloat(String convertStr){
         float val = Float.parseFloat(convertStr);
         return val;
     }
 
-	public static void versionControl(String v1, String v2){
-        String strV1 = v1.replaceAll("[^0.0-9.0]", "");
+    public static void versionControl(String v1, String v2){
+	//extract float values from string
+       	String strV1 = v1.replaceAll("[^0.0-9.0]", "");
         String strV2 = v2.replaceAll("[^0.0-9.0]", "");
+	
+	//use conversion method and store new floats
         Float fltV1 = strToFloat(strV1);
         Float fltV2 = strToFloat(strV2);
 
@@ -24,7 +28,7 @@ public class Q2{
 
 
     public static void main(String[] args){
-
+	//test cases
         versionControl("version0.0", "version0.0"); //zero base case
         versionControl("version1", "version1");     //no decimal points, equal
         versionControl("version1", "version2");     //no decimal points, less than
