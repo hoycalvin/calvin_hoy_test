@@ -45,7 +45,7 @@ public class Q2{
 /*
 Missing functionality: 
 My assumption is that, currently, this is how versions are titled. If titled differently, I would have created 3 more methods
-entitled "greaterThan", "lessThan", and "equalTo" and replaced the if statement within versionControl(). The three functions
-would have increased testing, where I could check if there are more decimal points, if letters counted as versions 
-(i.e versionA vs versionB), or other factors not mentioned. But, for now, I kept it simple.
+entitled "greaterThan", "lessThan", and "equalTo" and replaced the if statement within versionControl() with calls to the 
+three comparative functions. The three functions would have increased testing, where I could check if there are more decimal points,
+if letters counted as versions (i.e versionA vs versionB), or other factors not mentioned. But, for now, I kept it simple.
 */
